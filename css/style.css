@@ -1,0 +1,173 @@
+```css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    color: #222;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1e3a8a;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 8px;
+    align-items: start;
+}
+
+.checkbox-group input {
+    margin-top: 3px;
+}
+
+.checkbox-group label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.checkbox-group .error {
+    grid-column: 1 / -1;
+}
+
+.error {
+    display: block;
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.feedback {
+    display: block;
+    color: #555;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#registerBtn {
+    background: #2563eb;
+    color: white;
+}
+
+#registerBtn:hover {
+    background: #1d4ed8;
+}
+
+#resetBtn {
+    background: #e5e7eb;
+    color: #222;
+}
+
+#resetBtn:hover {
+    background: #d1d5db;
+}
+
+.success {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    background: #dcfce7;
+    color: #166534;
+    font-weight: bold;
+    text-align: center;
+}
+
+.summary {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #d1d5db;
+}
+
+.summary h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.summary p {
+    margin-bottom: 10px;
+}
+
+[aria-invalid="true"] {
+    border-color: #dc2626;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
+```
